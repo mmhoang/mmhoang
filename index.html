@@ -1,24 +1,230 @@
----
-layout: default
-title: site.title
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <h1 class="page-heading">Posts</h1>
+    <title>Margaret Hoang</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet" />
+    <!--<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" />-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Nunito:300|PT+Sans" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
+    <style type="text/css">
+        body {
+            /*font-family: 'Oxygen', sans-serif;*/
+            font-family: 'PT Sans', sans-serif;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Noto Serif', serif;
+            /* Texture from: https://www.transparenttextures.com/*/
+            background: #fffada url("broken-noise.jpg") repeat;
+            color: #29271b;
+        }
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        header,
+        section {
+            margin-bottom: 3rem;
+        }
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        /*
+        :focus {
+            outline: none;
+        }*/
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        @media (max-width: 1200px) {
+            img {
+                max-width: 20%;
+            }
+        }
 
-</div>
+        @media (max-width: 1000px) {
+            img {
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 800px) {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Arvo', serif;
+            font-family: 'Oxygen', sans-serif;
+            color: #6d485b;
+        }
+
+        /* Skeleton overrides */
+        h1 {
+            font-weight: 600;
+            letter-spacing: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /*        @media (min-width: 550px) {*/
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            letter-spacing: 0.3em;
+            font-weight: 600;
+        }
+
+        /*        }*/
+
+        nav .button {
+            /* background-color: rgb(131, 208, 191);*/
+            /*background-color: #d0e1bf;*/
+            border: 0;
+            border-left: 4px solid #83d0bf;
+            border-radius: 0;
+            background-color: rgba(51, 51, 51, 0.07);
+            background-color: rgba(208, 225, 191, 0.53);
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Text color */
+            cursor: pointer;
+            background-color: #d0e1bf;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <!--    <a href="#header" class="button" id="myBtn" title="Go to top">Top</a>-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header id="header" tabindex="0">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <h1>Margaret Hoang</h1>
+                    <p>Creative software developer.</p>
+                    <p><i>** Portfolio under construction. **</i></p>
+                </div>
+                <div class="six columns">
+                    <nav>
+                        <a class="button" href="#about">About</a>
+                        <a class="button" href="#dev">Projects</a>
+                        <a class="button" href="#graphics">Graphics</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="about" tabindex="0">
+        <div class="container">
+
+            <h2>About</h2>
+            <div class="row">
+                <!--<p>** Portfolio under construction. **</p>-->
+                <div class="one-half column">
+                    <h3>Info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="one-half column">
+                    <h3>Additional info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dev" tabindex="0">
+        <div class="container">
+            <div class="row">
+                <h2>Projects</h2>
+                <p>Coming soon.</p>
+            </div>
+        </div>
+    </section>
+    <section id="graphics" tabindex="0">
+        <div class="container">
+            <div class="row">
+                <h2>Graphics Design</h2>
+                <h3>LibriVox Audiobook Covers</h3>
+                <p>Coming soon.</p>
+                <section>
+                    <img src="librivox-fullsize/heroinesfiction_1901.jpg" />
+                    <img src="librivox-fullsize/tourhebrides_1901.jpg" />
+                    <img src="librivox-fullsize/ghostsgrowth_1901.jpg" />
+                    <img src="librivox-fullsize/lindatressel_1902.jpg" />
+                    <img src="librivox-fullsize/lionskin_1902.jpg" />
+                    <img src="librivox-fullsize/judithlee_1902.jpg" />
+                    <img src="librivox-fullsize/newhampshire_1902.jpg" />
+                    <img src="librivox-fullsize/alicewonderland_1902.jpg" />
+                </section>
+                <h3>Other</h3>
+                <p>Coming soon.</p>
+                <section>
+                    <img src="art/paradiso.jpg" />
+                    <img src="art/alice_medium.jpg" />
+                </section>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // https://codepen.io/anon/pen/pYzezm
+        $(function() {
+            $('a[href*=\\#]:not([href=\\#])').click(function(event) {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 875, function() {
+                            //target.attr('tabindex', '-1');
+                            target.focus();
+                        });
+                        location.hash = target;
+                        return false;
+                    }
+                }
+            });
+        });
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>
