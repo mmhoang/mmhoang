@@ -32,13 +32,17 @@
 
         section:focus {
             outline: none;
+            background-color: rgba(255, 255, 255, 1);
+            -webkit-transition: background-color 500ms linear;
+            -ms-transition: background-color 500ms linear;
+            transition: background-color 500ms linear;
         }
 
-        @media (max-width: 1200px) {
+        /*@media (max-width: 1200px) {
             img {
                 max-width: 20%;
             }
-        }
+        }*/
 
         @media (max-width: 1000px) {
             img {
@@ -48,7 +52,7 @@
 
         @media (max-width: 800px) {
             img {
-                max-width: 50%;
+                max-width: 100%;
             }
         }
 
@@ -141,101 +145,33 @@
             <div class="row">
                 <div class="six columns">
                     <h1>Margaret Hoang</h1>
-                    <p>Creative software developer</p>
+                    <p>Creative software developer.</p>
                 </div>
                 <div class="six columns">
                     <nav>
-                      <a class="button" href="./index.html">Home</a>
-                        <a class="button" href="#about">About</a>
-                        <a class="button" href="#dev">UX</a>
-                        <a class="button" href="#graphics">Graphics</a>
+                        <a class="button" href="./index.html">Home</a>
+                        <a class="button" href="./index.html#about">About</a>
+                        <a class="button" href="./index.html#dev">UX</a>
+                        <a class="button" href="./index.html#graphics">Graphics</a>
                     </nav>
                 </div>
             </div>
         </div>
 
     </header>
-    <div style="background-image: url('lighthouse-compressor.jpg'); background-position: 0% 30%; background-size: 100vw; width: 100%; height: 30vw; margin-bottom:3rem;">
-    </div>
     <!-- <img src="lighthouse.jpg" style="margin: 0; padding: 0; width:100vw;" />-->
-    <section id="about" tabindex="0">
-        <div class="container">
-
-            <h2>About</h2>
-            <div class="row">
-                <!--<p>** Portfolio under construction. **</p>-->
-                <div class="one-half column">
-                    <h3>Welcome!</h3>
-                    <img src="profile.jpeg" class="u-pull-left" style="margin-right:20px;"/>
-                    <p><b>Hi, I'm Margaret Hoang</b> (pronounced "Hwong"), a software developer from the Greater Seattle Area.  Manager, mentor, and meticulous coder, I've worn several hats over my 4.5 years of professional experience and 4 years of volunteer skills.<br><br><h4><a href="https://www.linkedin.com/in/mmhoang/">LinkedIn</a> - <a href="https://github.com/mmhoang">GitHub</a> - <a href="https://medium.com/@margarethoang">Medium</a></h4></p>
-                </div>
-                <div class="one-half column">
-                    <h3>Summary</h3>
-                    <p>While my background is in software, I believe technology is a story where the user is the protagonist - and a happy ending is an exceptional UX that goes beyond the technical and creates a lasting impression.  I've been teaching myself UX methodologies for 2 years and applying what I learn towards my current role on a small software team in a government agency.<br><br>Check out a few of my projects below!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<h2>////////////</h2>
     <section id="dev" tabindex="0">
         <div class="container">
             <div class="row">
                 <h2>UX</h2>
-                <p>A selection of uability-related projects I've completed while volunteering, self-learning, or working at South Sound 911, Tacoma, WA.  Examples have been sanitized to remove any non-public information.</p>
-                <h3>Background Checks</h3>
+<h3>Background Checks</h3>
                 <h4>Wireframing (May 2019)</h4>
-                <a href="backgroundchecks.html"><img src="ux/backgroundchecks/backgroundchecks_thumb.png" /></a>
-                <br><br><br>
-                <h3>Quick Reports</h3>
-                <h4>Journey Map - Side Project (May 2018)</h4>
-                <a href="quickreports.html"><img src="ux/quickreports/quickreports_thumb.png" /></a>
-                <br><br><br>
-                <h3>Online Reporting</h3>
-                <h4>Usability Testing (Feb 2017)</h4>
-                <a href="onlinereporting.html"><img src="ux/onlinereporting/onlinereporting_thumb.png" /></a>
-                <br><br><br>
-                <h3>Church Website</h3>
-                <h4>Mobile Design (Jun 2015)</h4>
-                <a href="stalbans.html"><img src="ux/stalbans/stalbans_thumb.png" /></a>
-            </div>
-        </div>
-    </section>
-    <h2>////////////</h2>
-    <section id="graphics" tabindex="0">
-        <div class="container">
-            <div class="row">
-                <h2>Graphic Design</h2>
-                <h3>LibriVox Audiobook Covers</h3>
-Created with <a href="https://www.gimp.org/">GIMP</a> for <a href="https://librivox.org/">LibriVox.org</a>, a volunteer-run effort to provide free, public domain audiobooks in many languages.  As required, each cover was created using public domain or Creative Commons 0 resources and open fonts.<br>
-With these covers, my goal is to provide a visualizer for the story, grab the listener's attention, and increase usability by making the title readable at thumbnail size.<br>
-I also love to challenge myself by volunteering for a variety of book genres and experimenting with different artistic styles.<br>
-<br>
-                <section>
-                    <img src="librivox-fullsize/heroinesfiction_1901.jpg" />
-                    <img src="librivox-fullsize/tourhebrides_1901.jpg" />
-                    <img src="librivox-fullsize/ghostsgrowth_1901.jpg" />
-                    <img src="librivox-fullsize/lindatressel_1902.jpg" />
-                    <img src="librivox-fullsize/lionskin_1902.jpg" />
-                    <img src="librivox-fullsize/judithlee_1902.jpg" />
-                    <img src="librivox-fullsize/newhampshire_1902.jpg" />
-                    <img src="librivox-fullsize/alicewonderland_1902.jpg" />
-                    <img src="librivox-fullsize/clemencia_1903.jpg" />
-                    <img src="librivox-fullsize/onedgeworld_1903.jpg" />
-                    <img src="librivox-fullsize/politia_1903.jpg" />
-                    <img src="librivox-fullsize/jurisprudence_1903.jpg" />
-                    <img src="librivox-fullsize/castlebuilder_1903.jpg" />
-                    <img src="librivox-fullsize/dracula_1904.jpg" />
-                    <img src="librivox-fullsize/storynuclearenergy_1904.jpg" />
-                    <img src="librivox-fullsize/emancipationsouthamerica_1905.jpg" />
-                    <img src="librivox-fullsize/conversationspluralityworlds_1905.jpg" />
-                    <p><i>Disclaimer: The views expressed in the above LibriVox audiobooks do not necessarily reflect my own views, and my cover art does not represent any endorsement of the books or their authors. To the best of my knowledge, I try to create covers for books that look interesting or educational, but most of them I have not read personally.</i></p>
-                </section>
-                <h3>Other</h3>
-                <p>Just for fun, these are some posters I created using one or more of the following: iPad + Apple Pencil, Autodesk SketchBook, GIMP, and Creative Commons 0 (CC0) resources.</p>
-                <section>
-                    <img src="art/paradiso.jpg" />
-                    <img src="art/alice_medium.jpg" />
-                </section>
+                <a href="ux/backgroundchecks/backgroundchecks.pdf"><img src="ux/backgroundchecks/backgroundchecks_thumb.png" /></a>
+                <p><b>Scenario:</b> Our team was tasked to add new UI elements to South Sound 911's Background Checks application, used by Records personnel to view and manage background check requests.  The unique constraint was the customers' vertical monitor setup, which was important to their workflow and efficiency.
+<p><b>Goals:</b> Identify the optimal way to add UI elements without expanding horizontally and while keeping modifications to the robust legacy code at minimum.</p>
+<p><b>Process:</b> I sketched three options based on different design conventions, provided pros/cons to each option, presented the options to the customer and project manager, and made a recommendation.</p>
+<p><b>Outcome:</b> The customers appreciated being part of the design discussion, and together we reached a decision that met the constraints without sacrificing usability.
+                </p>
             </div>
         </div>
     </section>
