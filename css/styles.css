@@ -59,6 +59,13 @@ nav .button {
     border-radius: 50%;
 }
 
+@media (max-width: 976px) {
+    #about img {
+        float: none;
+    }
+}
+
+
 a img {
     border: 1px solid #aaa;
 }
