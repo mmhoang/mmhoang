@@ -1,140 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Margaret Hoang</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet" />
-    <!--<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" />-->
-    <!--    <link href="https://fonts.googleapis.com/css?family=Nunito:300|PT+Sans" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
-    <style type="text/css">
-        body {
-            /*font-family: 'Oxygen', sans-serif;*/
-            font-family: 'PT Sans', sans-serif;
-            font-family: 'Lato', sans-serif;
-            font-family: 'Noto Serif', serif;
-            /* Texture from: https://www.transparenttextures.com/*/
-            background: #fffada url("broken-noise.jpg") repeat;
-            color: #29271b;
-            margin: 3rem 0;
-        }
-
-        header,
-        section {
-            margin-bottom: 3rem;
-        }
-
-
-        section:focus {
-            outline: none;
-        }
-
-        @media (max-width: 1200px) {
-            img {
-                max-width: 20%;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            img {
-                max-width: 50%;
-            }
-        }
-
-        @media (max-width: 800px) {
-            img {
-                max-width: 50%;
-            }
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Nunito', sans-serif;
-            font-family: 'Arvo', serif;
-            font-family: 'Oxygen', sans-serif;
-            color: #6d485b;
-        }
-
-        /* Skeleton overrides */
-        h1 {
-            font-weight: 600;
-            letter-spacing: 0.8rem;
-            text-transform: uppercase;
-        }
-
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        h2 {
-            font-size: 3.2rem;
-        }
-
-        h3 {
-            font-size: 1.9rem;
-            letter-spacing: 0.2em;
-            font-weight: 600;
-            text-decoration:underline;
-        }
-
-        h4 {
-            font-size: 1.4rem;
-            letter-spacing: 0.1em;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #444;
-        }
-
-        section a:link {
-            color: #4d8c7e;
-        }
-
-        section a:visited {
-            color: #4d8c7e;
-        }
-
-        section a:link {
-            color: #4d8c7e;
-        }
-
-        nav .button {
-            /* background-color: rgb(131, 208, 191);*/
-            /*background-color: #d0e1bf;*/
-            border: 0;
-            border-left: 4px solid #83d0bf;
-            border-radius: 0;
-            background-color: rgba(51, 51, 51, 0.07);
-            background-color: rgba(208, 225, 191, 0.53);
-        }
-
-        #myBtn {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Fixed/sticky position */
-            bottom: 20px;
-            /* Place the button at the bottom of the page */
-            right: 30px;
-            /* Place the button 30px from the right */
-            z-index: 99;
-            /* Text color */
-            cursor: pointer;
-            background-color: #d0e1bf;
-            border-radius: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body id="body">
-    <!--    <a href="#header" class="button" id="myBtn" title="Go to top">Top</a>-->
     <button onclick="scrollToTop()" id="myBtn" title="Go to top">Top</button>
     <header id="header" tabindex="0">
         <div class="container">
@@ -155,23 +31,21 @@
         </div>
 
     </header>
-    <div style="background-image: url('lighthouse-compressor.jpg'); background-position: 0% 30%; background-size: 100vw; width: 100%; height: 30vw; margin-bottom:3rem;">
-    </div>
-    <!-- <img src="lighthouse.jpg" style="margin: 0; padding: 0; width:100vw;" />-->
+
+    <div id="heroImage"></div>
+
     <section id="about" tabindex="0">
         <div class="container">
-
             <h2>About</h2>
             <div class="row">
-                <!--<p>** Portfolio under construction. **</p>-->
                 <div class="one-half column">
                     <h3>Welcome!</h3>
-                    <img src="profile.jpeg" class="u-pull-left" style="margin-right:20px;"/>
-                    <p><b>Hi, I'm Margaret Hoang</b> (pronounced "Hwong"), a software developer from the Greater Seattle Area.  Manager, mentor, and meticulous coder, I've worn several hats over my 4.5 years of professional experience and 4 years of volunteer skills.<br><br><h4><a href="https://www.linkedin.com/in/mmhoang/">LinkedIn</a> - <a href="https://github.com/mmhoang">GitHub</a> - <a href="https://medium.com/@margarethoang">Medium</a></h4></p>
+                    <img src="profile.jpeg" class="u-pull-left"/>
+                    <p><b>Hi, I'm Margaret Hoang</b> (pronounced "Hwong"), a software developer from the Greater Seattle Area.  <br><br><h4><a href="https://www.linkedin.com/in/mmhoang/">LinkedIn</a> // <a href="https://github.com/mmhoang">GitHub</a> // <a href="https://medium.com/@margarethoang">Medium</a></h4></p>
                 </div>
                 <div class="one-half column">
                     <h3>Summary</h3>
-                    <p>While my background is in software, I believe technology is a story where the user is the protagonist - and a happy ending is an exceptional UX that goes beyond the technical and creates a lasting impression.  I've been teaching myself UX methodologies for 2 years and applying what I learn towards my current role on a small software team in a government agency.<br><br>Check out a few of my projects below!</p>
+                    <p>Manager, mentor, and meticulous coder, I've worn several hats over my 4.5 years of professional experience and 4 years of volunteer skills. While my background is in software, I believe technology is a story where the user is the protagonist - and a happy ending is an exceptional UX that goes beyond the technical and creates a lasting impression.<br><br>I've been teaching myself UX methodologies for 2 years and applying what I learn towards my current role on a small software team. Check out a few of my projects below!</p>
                 </div>
             </div>
         </div>
@@ -179,25 +53,32 @@
 <h2>////////////</h2>
     <section id="dev" tabindex="0">
         <div class="container">
-            <div class="row">
-                <h2>UX</h2>
-                <p>A selection of uability-related projects I've completed while volunteering, self-learning, or working at South Sound 911, Tacoma, WA.  Examples have been sanitized to remove any non-public information.</p>
-                <h3>Background Checks</h3>
-                <h4>Wireframing (May 2019)</h4>
-                <a href="backgroundchecks.html"><img src="ux/backgroundchecks/backgroundchecks_thumb.png" /></a>
-                <br><br><br>
-                <h3>Quick Reports</h3>
-                <h4>Journey Map - Side Project (May 2018)</h4>
-                <a href="quickreports.html"><img src="ux/quickreports/quickreports_thumb.png" /></a>
-                <br><br><br>
-                <h3>Online Reporting</h3>
-                <h4>Usability Testing (Feb 2017)</h4>
-                <a href="onlinereporting.html"><img src="ux/onlinereporting/onlinereporting_thumb.png" /></a>
-                <br><br><br>
-                <h3>Church Website</h3>
-                <h4>Mobile Design (Jun 2015)</h4>
-                <a href="stalbans.html"><img src="ux/stalbans/stalbans_thumb.png" /></a>
-            </div>
+           <h2>UX</h2>
+          <p>A selection of uability-related projects I've completed while volunteering, self-learning, or working at South Sound 911, Tacoma, WA.  Examples have been sanitized to remove any non-public information.</p>
+          <div class="row">
+              <div class="one-third column">
+                  <h4>Wireframing (May 2019)</h4>
+                  <p><a href="backgroundchecks.html"><img src="ux/backgroundchecks/backgroundchecks_thumb.png" class="u-max-full-width"/></a></p>
+              </div>
+              <div class="one-third column">
+                  <h4>Journey Map - Side Project (May 2018)</h4>
+                  <p><a href="quickreports.html"><img src="ux/quickreports/quickreports_thumb.png" class="u-max-full-width"/></a> </p>
+              </div>
+              <div class="one-third column">
+                  <h4>Prototyping (Apr 2018)</h4>
+                  <p><a href="importdialog.html"><img src="ux/importdialog/importdialog_thumb.png" class="u-max-full-width" /></a></p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="one-third column">
+                  <h4>Usability Testing (Feb 2017)</h4>
+                  <p><a href="onlinereporting.html"><img src="ux/onlinereporting/onlinereporting_thumb.png" class="u-max-full-width" /></a></p>
+              </div>
+              <div class="one-third column">
+                  <h4>Mobile Design (Jun 2015)</h4>
+                  <p><a href="stalbans.html"><img src="ux/stalbans/stalbans_thumb.png" class="u-max-full-width" /></a> </p>
+              </div>
+          </div>
         </div>
     </section>
     <h2>////////////</h2>
@@ -211,79 +92,36 @@ With these covers, my goal is to provide a visualizer for the story, grab the li
 I also love to challenge myself by volunteering for a variety of book genres and experimenting with different artistic styles.<br>
 <br>
                 <section>
-                    <img src="librivox-fullsize/heroinesfiction_1901.jpg" />
-                    <img src="librivox-fullsize/tourhebrides_1901.jpg" />
-                    <img src="librivox-fullsize/ghostsgrowth_1901.jpg" />
-                    <img src="librivox-fullsize/lindatressel_1902.jpg" />
-                    <img src="librivox-fullsize/lionskin_1902.jpg" />
-                    <img src="librivox-fullsize/judithlee_1902.jpg" />
-                    <img src="librivox-fullsize/newhampshire_1902.jpg" />
-                    <img src="librivox-fullsize/alicewonderland_1902.jpg" />
-                    <img src="librivox-fullsize/clemencia_1903.jpg" />
-                    <img src="librivox-fullsize/onedgeworld_1903.jpg" />
-                    <img src="librivox-fullsize/politia_1903.jpg" />
-                    <img src="librivox-fullsize/jurisprudence_1903.jpg" />
-                    <img src="librivox-fullsize/castlebuilder_1903.jpg" />
-                    <img src="librivox-fullsize/dracula_1904.jpg" />
-                    <img src="librivox-fullsize/storynuclearenergy_1904.jpg" />
-                    <img src="librivox-fullsize/emancipationsouthamerica_1905.jpg" />
-                    <img src="librivox-fullsize/conversationspluralityworlds_1905.jpg" />
+                    <img src="librivox-fullsize/heroinesfiction_1901.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/tourhebrides_1901.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/ghostsgrowth_1901.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/lindatressel_1902.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/lionskin_1902.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/judithlee_1902.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/newhampshire_1902.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/alicewonderland_1902.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/clemencia_1903.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/onedgeworld_1903.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/politia_1903.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/jurisprudence_1903.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/castlebuilder_1903.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/dracula_1904.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/storynuclearenergy_1904.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/emancipationsouthamerica_1905.jpg" class="u-max-full-width"/>
+                    <img src="librivox-fullsize/conversationspluralityworlds_1905.jpg" class="u-max-full-width"/>
                     <p><i>Disclaimer: The views expressed in the above LibriVox audiobooks do not necessarily reflect my own views, and my cover art does not represent any endorsement of the books or their authors. To the best of my knowledge, I try to create covers for books that look interesting or educational, but most of them I have not read personally.</i></p>
                 </section>
                 <h3>Other</h3>
                 <p>Just for fun, these are some posters I created using one or more of the following: iPad + Apple Pencil, Autodesk SketchBook, GIMP, and Creative Commons 0 (CC0) resources.</p>
                 <section>
-                    <img src="art/paradiso.jpg" />
-                    <img src="art/alice_medium.jpg" />
+                    <img src="art/paradiso.jpg" class="u-max-full-width" />
+                    <img src="art/alice_medium.jpg" class="u-max-full-width" />
                 </section>
             </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-
-        // Smooth scrolling
-        // Solution from https://codepen.io/anon/pen/pYzezm
-        $(function() {
-            $('a[href*=\\#]:not([href=\\#])').click(function(event) {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 875, function() {
-                            target.focus();
-                        });
-                        location.hash = event.currentTarget.hash;
-                        return false;
-                    }
-                }
-            });
-        });
-
-        // Handles onscroll functionality
-        window.onscroll = function() {
-            toggleTopButton()
-        };
-
-        // Toggles the display of the 'Top' button after scrolling downward
-        function toggleTopButton() {
-            var scrollMargin = 20;
-            if (document.body.scrollTop > scrollMargin || document.documentElement.scrollTop > scrollMargin) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // Scrolls to the top of the document
-        function scrollToTop() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-
-    </script>
+    <script src="scripts/portfolio.js" type="text/javascript"></script>
 </body>
 
 </html>
