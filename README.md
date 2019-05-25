@@ -6,4 +6,4 @@ Check it out here: https://mmhoang.github.io
 ## TODO:
 - [x] Initial check-in
 - [x] Basic refactoring
-- [] Convert to Jekyll site
+- [ ] Convert to Jekyll site
