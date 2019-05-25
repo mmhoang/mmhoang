@@ -65,13 +65,17 @@ nav .button {
     }
 }
 
-
 a img {
     border: 1px solid #aaa;
 }
 
 a img:hover {
     box-shadow: 0 0 2px 1px rgba(131, 208, 191, 1);
+}
+
+/* Add a bit of space at the bottom so the 'Top' button doesn't cover any text. */
+.projectPage {
+    margin-bottom: 4em;
 }
 
 /* Begin Skeleton overrides */
