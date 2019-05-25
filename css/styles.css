@@ -1,0 +1,105 @@
+body {
+    font-family: 'Noto Serif', serif;
+    /* Background pattern from Toptal Subtle Patterns */
+    background: #fffada url("../img/broken-noise.jpg") repeat;
+    color: #29271b;
+    margin: 3rem 0;
+}
+
+header,
+section {
+    margin-bottom: 3rem;
+}
+
+#heroImage {
+    background-image: url('../img/lighthouse-compressor.jpg');
+    background-position: 0% 30%;
+    background-size: 100vw;
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 3rem;
+}
+
+/* Remove dotted outline after switching focus. */
+section:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oxygen', sans-serif;
+    color: #6d485b;
+}
+
+nav .button {
+    border: 0;
+    border-left: 4px solid #83d0bf;
+    border-radius: 0;
+    background-color: rgba(208, 225, 191, 0.53);
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Text color */
+    cursor: pointer;
+    background-color: #d0e1bf;
+    border-radius: 0;
+}
+
+#about img {
+    border-radius: 50%;
+}
+
+a img {
+    border: 1px solid #aaa;
+}
+
+a img:hover {
+    box-shadow: 0 0 2px 1px rgba(131, 208, 191, 1);
+}
+
+/* Begin Skeleton overrides */
+h1 {
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+}
+
+section a:link,
+section a:visited,
+section a:hover {
+    color: #4d8c7e;
+}
+
+.u-pull-left {
+    margin-right:20px;
+}
+/* End Skeleton overrides */
