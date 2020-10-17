@@ -94,11 +94,21 @@ nav .button {
 @media (max-width: 976px) {
     #about img {
         float: none;
+        display: block;
+        margin: 0 auto;
     }
 
     .name h1 {
         font-size: 2em;
     }
+
+    .container h3 {
+        font-size: 1.9rem;
+        letter-spacing: 0.2em;
+        font-weight: 600;
+        text-align: left;
+    }
+    
 }
 
 a img {
