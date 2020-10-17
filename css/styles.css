@@ -31,8 +31,12 @@ section {
     margin-bottom: 3rem;
 }
 
-.divider {
-    text-align: center;
+.parallelogram {
+	width: 100px;
+	height: 25px;
+	transform: skew(-30deg);
+    background: #6d485b;
+    margin: 2em auto 2em auto;
 }
 
 /* Remove dotted outline after switching focus. */
@@ -71,7 +75,7 @@ nav .button {
     border: none;
     border-bottom: 4px solid #83d0bf;
     border-radius: 0;
-    font-family: 'PT Serif', serif;
+    font-family: 'Lato', serif;
     color: #29271b;
 }
 
@@ -106,16 +110,32 @@ a img:hover {
     margin-bottom: 4em;
 }
 
+.footer {
+    color: #777;
+    font-size: 11px;
+    font-family: 'Lato', serif;
+    text-align: center;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer a:link,
+.footer a:visited {
+    color: #777;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #4d8c7e;
+    text-decoration: none;
+}
+
 /* Begin Skeleton overrides */
 h1 {
     font-weight: 600;
     letter-spacing: 0.8rem;
     text-transform: uppercase;
     font-size: 3rem;
-}
-
-h2 {
-    font-size: 3.2rem;
 }
 
 h3 {
@@ -130,6 +150,7 @@ h4 {
     font-weight: 600;
     text-transform: uppercase;
     color: #444;
+    margin-bottom: 0.2em;
 }
 
 section a:link,
