@@ -1,9 +1,11 @@
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Lato', serif;
     /* Background pattern from Toptal Subtle Patterns */
     background: #fffada url("../img/broken-noise.jpg") repeat;
     color: #29271b;
     margin: 3rem 0;
+    font-size: 18px;
+    text-align: justify;
 }
 
 header,
@@ -41,7 +43,7 @@ section:focus {
 h1,
 h2,
 h3 {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Rufina', sans-serif;
     color: #6d485b;
 }
 
@@ -69,7 +71,7 @@ nav .button {
     border: none;
     border-bottom: 4px solid #83d0bf;
     border-radius: 0;
-    font-family: 'Noto Serif', serif;
+    font-family: 'PT Serif', serif;
     color: #29271b;
 }
 
