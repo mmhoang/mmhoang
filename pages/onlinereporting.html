@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Margaret Hoang</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oxygen:300" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Rufina:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <body id="body">
@@ -15,21 +15,29 @@
     <header id="header" tabindex="0">
         <div class="container">
             <div class="row">
-                <div class="six columns">
-                    <h1>Margaret Hoang</h1>
-                    <p>Creative software developer.</p>
-                </div>
-                <div class="six columns">
+                <div class="twelve columns" style="text-align:center">
                     <nav>
-                        <a class="button" href="./index.html">Home</a>
-                        <a class="button" href="./index.html#about">About</a>
-                        <a class="button" href="./index.html#dev">UX</a>
-                        <a class="button" href="./index.html#graphics">Graphics</a>
+                        <div class="row">
+                            <div class="four columns">
+                                <a class="button" href="../index.html#about">About</a>
+                            </div>
+                            <div class="four columns">
+                                <a class="button" href="../index.html#ux">UX</a>
+                            </div>
+                            <div class="four columns">
+                                <a class="button" href="../index.html#graphics">Graphics</a>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="twelve columns name">
+                <h1>Margaret Hoang</h1>
+                <h3 class="tagline">Creative software developer</h3>
+            </div>
+        </div>
     </header>
     <section id="dev" tabindex="0" class="projectPage">
         <div class="container">
@@ -37,12 +45,12 @@
                 <h2>UX</h2>
                 <h3>Online Reporting</h3>
                 <h4>Usability Testing (Feb 2017)</h4>
-                <img src="ux/onlinereporting/onlinereporting_thumb.png" class="u-max-full-width"/> <img src="ux/onlinereporting/1.JPG" class="u-max-full-width"/>
+                <img src="../ux/onlinereporting/onlinereporting_thumb.png" class="u-max-full-width"/> <img src="../ux/onlinereporting/1.JPG" class="u-max-full-width"/>
                 <br><br>
                 <p><b>Scenario:</b> <a href="https://www2.southsound911.org/onlinereporting/">Online Reporting</a> is a South Sound 911 website which enables Pierce County residents to submit a police report for a non-emergency situation.  Prior to its release date, management expressed interest in gathering some initial feedback about the application.  I volunteered to conduct usability testing.
                 <p><b>Goals:</b> Identify common UX challenges users might encounter and observe user reactions.</p>
                 <p><b>Process:</b> Following Steve Krug's recommendation in his book <i>Don't Make Me Think</i>, I created a test script for myself and several test scenarios (user stories).  For my sample of users, I asked three family members of different demographics and technical abilities to participate, since the application is geared towards people of all backgrounds. I also invited a civilian volunteer from a local police department.</p>
-                <img class="u-full-width" src="ux/onlinereporting/2.JPG" class="u-max-full-width"/><br><br>
+                <img class="u-full-width" src="../ux/onlinereporting/2.JPG" class="u-max-full-width"/><br><br>
                 <p>I met with each participant individually and in person.  The test format consisted of first asking each person to "think out loud" their impression of the Online Reporting website, then asking them to fill out a report for 3-4 test scenarios.  As they navigated the application, I asked only open-ended questions and avoided biasing the results by making suggestions or giving "hints," unless they got completely stuck.</p>
                 <p><b>Outcome:</b> Across the three tests, there were 2–3 usability issues that were clearly prevalent, ranging from a button's label to the flow of the opening screens. User opinions on the site architecture were mixed and seemed to correlate with the experience.  I collated the findings and presented them to the project manager.  While the work to fix the UX issues did not gain enough relative priority to be addressed at the time, they remain documented in our Ideas list for future consideration.
                 </p>
@@ -50,7 +58,7 @@
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="scripts/portfolio.js" type="text/javascript"></script>
+    <script src="../scripts/portfolio.js" type="text/javascript"></script>
 </body>
 
 </html>
