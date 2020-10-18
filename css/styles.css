@@ -1,7 +1,7 @@
 body {
     font-family: 'Lato', serif;
     /* Background pattern from Toptal Subtle Patterns */
-    background: #fffada url("../img/broken-noise.jpg") repeat;
+    background: #fbecd9 url("../img/broken-noise.jpg") repeat;
     color: #29271b;
     margin: 3rem 0;
     font-size: 18px;
@@ -24,6 +24,10 @@ section {
 
 .name h1 {
     font-size: 3em;
+}
+
+.name a {
+    text-decoration: none;
 }
 
 #heroImage {
@@ -153,8 +157,8 @@ h1 {
 }
 
 h3 {
-    font-size: 1.9rem;
-    letter-spacing: 0.2em;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
     font-weight: 600;
 }
 
