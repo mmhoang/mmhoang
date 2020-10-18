@@ -156,10 +156,15 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 3.8rem;
+}
+
 h3 {
     font-size: 2rem;
     letter-spacing: 0.1em;
     font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 
 h4 {
