@@ -59,6 +59,10 @@ h3 {
     color: #6d485b;
 }
 
+li {
+    line-height: 1.2;
+}
+
 nav .button {
     border: 0;
     border-bottom: 4px solid #83d0bf;
