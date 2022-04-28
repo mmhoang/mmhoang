@@ -1,10 +1,9 @@
 body {
-    font-family: 'Lato', serif;
-    /* Background pattern from Toptal Subtle Patterns */
-    background: #fbecd9 url("../img/broken-noise.jpg") repeat;
-    color: #29271b;
+    font-family: 'Overpass', sans serif;
+    background: #ffffff;
+    color: #111111;
     margin: 3rem 0;
-    font-size: 18px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -55,7 +54,6 @@ section:focus {
 h1,
 h2,
 h3 {
-    font-family: 'Rufina', sans-serif;
     color: #6d485b;
 }
 
@@ -83,16 +81,16 @@ nav .button {
     z-index: 99;
     /* Text color */
     cursor: pointer;
-    background-color: rgba(131, 208, 191, 0.8);
+    background-color: #50b19c;
     border: none;
     border-bottom: 4px solid #83d0bf;
     border-radius: 0;
-    font-family: 'Lato', serif;
-    color: #29271b;
+    color:#ffffff;
 }
 
 #myBtn:hover {
-    border-color: #888;
+    background-color: #83d0bf;
+    border-bottom: 4px solid #dddddd;
 }
 
 #about img {
@@ -135,7 +133,6 @@ a img:hover {
 .footer {
     color: #777;
     font-size: 11px;
-    font-family: 'Lato', serif;
     text-align: center;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -154,30 +151,38 @@ a img:hover {
 
 /* Begin Skeleton overrides */
 h1 {
-    font-weight: 600;
-    letter-spacing: 0.8rem;
-    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
     font-size: 3rem;
 }
 
 h2 {
-    font-size: 3.8rem;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
 }
 
 h3 {
     font-size: 2rem;
     letter-spacing: 0.1em;
-    font-weight: 600;
     margin-bottom: 0.2rem;
 }
 
 h4 {
     font-size: 1.4rem;
     letter-spacing: 0.1em;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     color: #4d8c7e;
     margin-bottom: 0.2em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 section a:link,
